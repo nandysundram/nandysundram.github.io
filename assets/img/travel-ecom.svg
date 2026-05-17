@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d3b6e"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="tealAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#skyGrad)"/>
+  <!-- Stars -->
+  <circle cx="50" cy="40" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="150" cy="20" r="1" fill="white" opacity="0.5"/>
+  <circle cx="700" cy="30" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="750" cy="60" r="1" fill="white" opacity="0.5"/>
+  <circle cx="600" cy="15" r="2" fill="white" opacity="0.6"/>
+  <!-- Plane icon -->
+  <g transform="translate(640,50)" opacity="0.9" filter="url(#glow2)">
+    <text font-size="52" fill="#0ea5e9">✈</text>
+  </g>
+  <!-- Dashed flight path -->
+  <path d="M 100 130 Q 400 30 690 95" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="8,5" fill="none" opacity="0.5"/>
+  <!-- Main card -->
+  <rect x="80" y="130" width="640" height="295" rx="16" fill="#0f2545" stroke="#0ea5e9" stroke-width="1.5"/>
+  <!-- Header bar -->
+  <rect x="80" y="130" width="640" height="52" rx="16" fill="url(#tealAccent)"/>
+  <rect x="80" y="160" width="640" height="22" fill="url(#tealAccent)"/>
+  <text x="400" y="163" text-anchor="middle" fill="white" font-size="15" font-family="Arial" font-weight="bold">Travel Booking Platform — AWS Infrastructure</text>
+  <!-- Destination cards -->
+  <rect x="105" y="200" width="170" height="140" rx="12" fill="#0d3b6e"/>
+  <text x="190" y="240" text-anchor="middle" font-size="32">🏝</text>
+  <text x="190" y="268" text-anchor="middle" fill="white" font-size="13" font-family="Arial" font-weight="bold">Maldives</text>
+  <text x="190" y="286" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">Beach Resort</text>
+  <rect x="190" y="300" width="90" height="24" rx="12" fill="#0ea5e9"/>
+  <text x="235" y="317" text-anchor="middle" fill="white" font-size="11" font-family="Arial" font-weight="bold">Book Now</text>
+  <rect x="315" y="200" width="170" height="140" rx="12" fill="#0d3b6e"/>
+  <text x="400" y="240" text-anchor="middle" font-size="32">🗼</text>
+  <text x="400" y="268" text-anchor="middle" fill="white" font-size="13" font-family="Arial" font-weight="bold">Paris</text>
+  <text x="400" y="286" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">City Tour</text>
+  <rect x="355" y="300" width="90" height="24" rx="12" fill="#0ea5e9"/>
+  <text x="400" y="317" text-anchor="middle" fill="white" font-size="11" font-family="Arial" font-weight="bold">Book Now</text>
+  <rect x="525" y="200" width="170" height="140" rx="12" fill="#0d3b6e"/>
+  <text x="610" y="240" text-anchor="middle" font-size="32">🗻</text>
+  <text x="610" y="268" text-anchor="middle" fill="white" font-size="13" font-family="Arial" font-weight="bold">Swiss Alps</text>
+  <text x="610" y="286" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">Mountain Trek</text>
+  <rect x="565" y="300" width="90" height="24" rx="12" fill="#0ea5e9"/>
+  <text x="610" y="317" text-anchor="middle" fill="white" font-size="11" font-family="Arial" font-weight="bold">Book Now</text>
+  <!-- Infrastructure tags -->
+  <rect x="100" y="360" width="85" height="26" rx="13" fill="#0ea5e9" opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="142" y="378" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">EC2 + ALB</text>
+  <rect x="200" y="360" width="85" height="26" rx="13" fill="#0ea5e9" opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="242" y="378" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">RDS MySQL</text>
+  <rect x="300" y="360" width="85" height="26" rx="13" fill="#0ea5e9" opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="342" y="378" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">ElastiCache</text>
+  <rect x="400" y="360" width="85" height="26" rx="13" fill="#0ea5e9" opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="442" y="378" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">S3 + CDN</text>
+  <rect x="500" y="360" width="85" height="26" rx="13" fill="#0ea5e9" opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="542" y="378" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">Lambda</text>
+  <rect x="600" y="360" width="85" height="26" rx="13" fill="#0ea5e9" opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="642" y="378" text-anchor="middle" fill="#0ea5e9" font-size="11" font-family="Arial">Route 53</text>
+  <!-- Footer -->
+  <text x="400" y="414" text-anchor="middle" fill="#38bdf8" font-size="16" font-family="Arial" font-weight="bold" filter="url(#glow2)">Travel Booking E-Commerce Platform</text>
+  <text x="400" y="435" text-anchor="middle" fill="#7dd3fc" font-size="11" font-family="Arial">AWS Cloud · Scalable Backend · Seamless UX · Secure Payments</text>
+  <text x="400" y="458" text-anchor="middle" fill="#1d4ed8" font-size="11" font-family="Arial">EC2 · RDS · ElastiCache · S3 · CloudFront · Lambda · Route53</text>
+</svg>

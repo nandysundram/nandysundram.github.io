@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="darkRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="100%" style="stop-color:#2d0f0f"/>
+    </linearGradient>
+    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="greenOk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+    <filter id="redGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="greenGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#darkRed)"/>
+  <!-- Scan lines effect -->
+  <g opacity="0.04">
+    <line x1="0" y1="20" x2="800" y2="20" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="40" x2="800" y2="40" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="60" x2="800" y2="60" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="80" x2="800" y2="80" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="120" x2="800" y2="120" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="140" x2="800" y2="140" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="160" x2="800" y2="160" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="180" x2="800" y2="180" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="220" x2="800" y2="220" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="240" x2="800" y2="240" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="260" x2="800" y2="260" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="280" x2="800" y2="280" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="320" x2="800" y2="320" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="340" x2="800" y2="340" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="360" x2="800" y2="360" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="380" x2="800" y2="380" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="420" x2="800" y2="420" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="440" x2="800" y2="440" stroke="#ef4444" stroke-width="1"/>
+    <line x1="0" y1="460" x2="800" y2="460" stroke="#ef4444" stroke-width="1"/>
+  </g>
+  <!-- ALERT Banner -->
+  <rect x="0" y="0" width="800" height="58" fill="url(#alertGrad)" opacity="0.92"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="22" font-family="Arial" font-weight="bold" letter-spacing="4">⚠  FRAUD DETECTION SYSTEM  ⚠</text>
+  <!-- Main panel -->
+  <rect x="50" y="80" width="700" height="340" rx="14" fill="#1f0707" stroke="#dc2626" stroke-width="1.5"/>
+  <!-- Left: Transaction log -->
+  <rect x="65" y="100" width="310" height="300" rx="10" fill="#160404"/>
+  <text x="220" y="125" text-anchor="middle" fill="#ef4444" font-size="13" font-family="monospace" font-weight="bold">TRANSACTION MONITOR</text>
+  <!-- Transaction rows -->
+  <rect x="75" y="138" width="290" height="28" rx="4" fill="#dc2626" opacity="0.15"/>
+  <text x="85" y="158" fill="#ef4444" font-size="10" font-family="monospace">TXN#8821 · ₹1,20,000 · Mumbai ⚑ FRAUD</text>
+  <rect x="75" y="172" width="290" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+  <text x="85" y="192" fill="#22c55e" font-size="10" font-family="monospace">TXN#8820 · ₹2,500 · Chennai ✓ CLEAR</text>
+  <rect x="75" y="206" width="290" height="28" rx="4" fill="#dc2626" opacity="0.15"/>
+  <text x="85" y="226" fill="#ef4444" font-size="10" font-family="monospace">TXN#8819 · ₹88,000 · Unknown ⚑ FRAUD</text>
+  <rect x="75" y="240" width="290" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+  <text x="85" y="260" fill="#22c55e" font-size="10" font-family="monospace">TXN#8818 · ₹500 · Bangalore ✓ CLEAR</text>
+  <rect x="75" y="274" width="290" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+  <text x="85" y="294" fill="#22c55e" font-size="10" font-family="monospace">TXN#8817 · ₹15,000 · Hyderabad ✓ CLEAR</text>
+  <rect x="75" y="308" width="290" height="28" rx="4" fill="#dc2626" opacity="0.15"/>
+  <text x="85" y="328" fill="#ef4444" font-size="10" font-family="monospace">TXN#8816 · ₹2,40,000 · Foreign ⚑ FRAUD</text>
+  <rect x="75" y="342" width="290" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+  <text x="85" y="362" fill="#22c55e" font-size="10" font-family="monospace">TXN#8815 · ₹750 · Delhi ✓ CLEAR</text>
+  <!-- Right: Stats + Infrastructure -->
+  <rect x="390" y="100" width="345" height="135" rx="10" fill="#160404"/>
+  <text x="562" y="125" text-anchor="middle" fill="#ef4444" font-size="13" font-family="monospace" font-weight="bold">DETECTION STATS</text>
+  <text x="410" y="150" fill="#fca5a5" font-size="12" font-family="Arial">Total Scanned</text>
+  <text x="710" y="150" text-anchor="end" fill="white" font-size="14" font-family="Arial" font-weight="bold">12,482</text>
+  <text x="410" y="173" fill="#fca5a5" font-size="12" font-family="Arial">Fraudulent Blocked</text>
+  <text x="710" y="173" text-anchor="end" fill="#ef4444" font-size="14" font-family="Arial" font-weight="bold" filter="url(#redGlow)">342</text>
+  <text x="410" y="196" fill="#fca5a5" font-size="12" font-family="Arial">Accuracy Rate</text>
+  <text x="710" y="196" text-anchor="end" fill="#22c55e" font-size="14" font-family="Arial" font-weight="bold" filter="url(#greenGlow)">98.7%</text>
+  <text x="410" y="219" fill="#fca5a5" font-size="12" font-family="Arial">Avg Response</text>
+  <text x="710" y="219" text-anchor="end" fill="#38bdf8" font-size="14" font-family="Arial" font-weight="bold">120ms</text>
+  <!-- Infrastructure tags -->
+  <rect x="390" y="250" width="345" height="155" rx="10" fill="#160404"/>
+  <text x="562" y="275" text-anchor="middle" fill="#ef4444" font-size="12" font-family="Arial" font-weight="bold">AWS INFRASTRUCTURE</text>
+  <rect x="405" y="285" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="452" y="303" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">EKS Cluster</text>
+  <rect x="510" y="285" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="557" y="303" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">Windows Server</text>
+  <rect x="615" y="285" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="662" y="303" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">CloudWatch</text>
+  <rect x="405" y="320" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="452" y="338" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">Lambda</text>
+  <rect x="510" y="320" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="557" y="338" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">SNS Alerts</text>
+  <rect x="615" y="320" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="662" y="338" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">RDS + MSSQL</text>
+  <rect x="405" y="355" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="452" y="373" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">WAF + Shield</text>
+  <rect x="510" y="355" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="557" y="373" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">VPC + SG</text>
+  <rect x="615" y="355" width="95" height="26" rx="13" fill="#dc2626" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+  <text x="662" y="373" text-anchor="middle" fill="#ef4444" font-size="10" font-family="Arial">Fargate</text>
+  <!-- Footer -->
+  <text x="400" y="444" text-anchor="middle" fill="#fca5a5" font-size="16" font-family="Arial" font-weight="bold" filter="url(#redGlow)">Fraud Detection System</text>
+  <text x="400" y="463" text-anchor="middle" fill="#7f1d1d" font-size="11" font-family="Arial">EKS · Windows Server · ML-Based Detection · 98.7% Accuracy</text>
+</svg>
